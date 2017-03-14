@@ -15,6 +15,22 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
+	
+		<div id="modal_01" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Some text in the Modal..</p>
+			</div>
+		</div>
+		
+		<div id="modal_02" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>This is the second modal.</p>
+			</div>
+		</div>
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -55,10 +71,10 @@
 								<section>
 									<div class="row">
 										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<a href="#" onclick="showModal('modal_01');" class="image fit"><img src="images/pic01.jpg" alt=""></a>
 										</div>
 										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+											<a href="#" onclick="showModal('modal_02');" class="image fit"><img src="images/pic02.jpg" alt=""></a>
 										</div>
 										<div class="4u$ 12u$(mobile)">
 											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
@@ -175,6 +191,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
